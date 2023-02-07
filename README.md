@@ -7,3 +7,8 @@ anything at all.
 
 So I thought I'd write a mini program that irritates the user, 
 just to see if I can get inside the mind of autocorrect.
+
+For the avoidance of doubt, please note well that the next sentence
+I type is in jest.
+
+Maybe I could deploy this as WhatsApp malware!
