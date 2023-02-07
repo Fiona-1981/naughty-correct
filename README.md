@@ -1,5 +1,7 @@
 # naughty-correct
 
+Warning: Mild profanity.
+
 There are days when I almost lose my shit typing on my phone.
 Autocorrect fails to correct non-existent words, autocorrects
 correct words, and ignores repeated attempts to actually write
