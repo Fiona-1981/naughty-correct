@@ -14,3 +14,6 @@ For the avoidance of doubt, please note well that the next sentence
 I type is in jest.
 
 Maybe I could deploy this as WhatsApp malware!
+
+Update: I've now figured out how to add multiple words to my
+naughty dictionary! Hashes, of course. This is exciting.
