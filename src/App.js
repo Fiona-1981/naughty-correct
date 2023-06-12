@@ -1,6 +1,6 @@
 // import './App.css';
 import * as React from 'react'
-import { Button, ChakraProvider, Heading, Input, Center } from '@chakra-ui/react'
+import { Button, ChakraProvider, Heading, Textarea, Center } from '@chakra-ui/react'
 
 function UserMessage({onSubmitUserMessage}) {
   function handleSubmit(event) {
@@ -12,8 +12,8 @@ function UserMessage({onSubmitUserMessage}) {
     <ChakraProvider>
     <form onSubmit={handleSubmit}>
       <div>
-        <Heading color='orange' align='center' htmlFor="messageInput">Go on, type something...</Heading>
-        <Input id="messageInput" type="text" placeholder='Type here' />
+        <Heading color='black' align='center' marginTop='20px' marginBottom='20px' htmlFor="messageInput">Go on, type something...</Heading>
+        <Center><Textarea htmlSize={4} width='auto' id="messageInput" type="text" marginBottom='20px' placeholder='Type here' /> </Center>
       </div>
       <Center><Button type="submit" align='center' >Go forth</Button></Center>
     </form>
@@ -29,7 +29,7 @@ function UserMessage({onSubmitUserMessage}) {
 // program.
 
 function App() {
-  const onSubmitUserMessage = userMessage => alert(`You wrote: ${userMessage}`)
+  const onSubmitUserMessage = userMessage => alert(`This is what you were really thinking: "${userMessage.replaceAll(".", "???!!!")}"`);
   return <UserMessage onSubmitUserMessage={onSubmitUserMessage} />
 }
 
