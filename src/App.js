@@ -1,4 +1,6 @@
 // import './App.css';
+import * as React from 'react'
+import { Button, ChakraProvider, Heading, Input, Center } from '@chakra-ui/react'
 
 function UserMessage({onSubmitUserMessage}) {
   function handleSubmit(event) {
@@ -7,13 +9,15 @@ function UserMessage({onSubmitUserMessage}) {
   }
 
   return (
+    <ChakraProvider>
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="messageInput">Go on, type something...</label>
-        <input id="messageInput" type="text" />
+        <Heading color='orange' align='center' htmlFor="messageInput">Go on, type something...</Heading>
+        <Input id="messageInput" type="text" placeholder='Type here' />
       </div>
-      <button type="submit">Go forth</button>
+      <Center><Button type="submit" align='center' >Go forth</Button></Center>
     </form>
+    </ChakraProvider>
   )
 }
 
