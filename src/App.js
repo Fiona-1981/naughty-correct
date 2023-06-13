@@ -1,6 +1,5 @@
-// import './App.css';
 import * as React from 'react'
-import { Button, ChakraProvider, Heading, Textarea, Center } from '@chakra-ui/react'
+import { Button, ChakraProvider, Heading, Textarea, Center, Box, } from '@chakra-ui/react'
 
 function UserMessage({onSubmitUserMessage}) {
   function handleSubmit(event) {
@@ -10,13 +9,15 @@ function UserMessage({onSubmitUserMessage}) {
 
   return (
     <ChakraProvider>
+    <Box w='100%' h='800px' bgImage="&#128520" bgGradient='linear(to-b, purple.500, black)'> 
     <form onSubmit={handleSubmit}>
       <div>
-        <Heading color='black' align='center' marginTop='20px' marginBottom='20px' htmlFor="messageInput">Go on, type something...</Heading>
-        <Center><Textarea htmlSize={4} width='auto' id="messageInput" type="text" marginBottom='20px' placeholder='Type here' /> </Center>
+        <Heading color='black' align='center' marginTop='80px' marginBottom='50px' htmlFor="messageInput">Go on, type something...</Heading>
+        <Center><Textarea htmlsize={4} width='auto' id="messageInput" type="text" marginBottom='50px' placeholder='Type here' /> </Center>
       </div>
-      <Center><Button type="submit" align='center' >Go forth</Button></Center>
+      <Center><Button type="submit" align='center' variant='outline' colorScheme='black' >Send to the boss</Button></Center>
     </form>
+    </Box>
     </ChakraProvider>
   )
 }
@@ -29,7 +30,12 @@ function UserMessage({onSubmitUserMessage}) {
 // program.
 
 function App() {
-  const onSubmitUserMessage = userMessage => alert(`This is what you were really thinking: "${userMessage.replaceAll(".", "???!!!")}"`);
+  const onSubmitUserMessage = userMessage => 
+  alert(`
+  This is what you were really thinking: 
+  "${userMessage.replaceAll(".", "???!!!").replaceAll("and", "buggeration")
+  .replaceAll("there", "[REDACTED]")}"
+  `);
   return <UserMessage onSubmitUserMessage={onSubmitUserMessage} />
 }
 
