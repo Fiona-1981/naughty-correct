@@ -1,3 +1,9 @@
+I made myself giggle with my revenge on Autocorrect.
+
+<img width="627" alt="naughty github" src="https://github.com/Fiona-1981/naughty-correct/assets/82163486/fdf2edd5-c290-44a7-9efd-defc9521bda9">
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
