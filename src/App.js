@@ -9,7 +9,7 @@ function UserMessage({onSubmitUserMessage}) {
 
   return (
     <ChakraProvider>
-    <Box w='100%' h='800px' bgImage="&#128520" bgGradient='linear(to-b, purple.500, black)'> 
+    <Box w='100%' h='800px' bgImage="&#128520" bgGradient='linear(to-b, purple.300, purple.500)'> 
     <form onSubmit={handleSubmit}>
       <div>
         <Heading color='black' align='center' marginTop='80px' marginBottom='50px' htmlFor="messageInput">Go on, type something...</Heading>
@@ -28,6 +28,9 @@ function UserMessage({onSubmitUserMessage}) {
 // Sometimes import this and that doesn't seem to work.
 // Perhaps for simplicity for now, add it to this page since it's only a very small
 // program.
+
+// Look up onKeyPress for later...
+// Research hashes in JavaScript
 
 function App() {
   const onSubmitUserMessage = userMessage => 
